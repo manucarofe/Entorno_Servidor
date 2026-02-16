@@ -1,0 +1,179 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.section-header h5 {
+    color: #495057;
+    font-weight: 600;
+}
+
+.section-header hr {
+    border-top: 2px solid #dee2e6;
+    opacity: 1;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+}
+
+.dynamic-item {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.dynamic-item .card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+}
+
+.remove-btn {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la visualización del CV */
+.cv-container {
+    background: white;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.cv-header {
+    border-bottom: 3px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.cv-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
+.cv-name {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cv-contact {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.cv-section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.cv-item {
+    margin-bottom: 20px;
+}
+
+.cv-item-title {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.cv-item-subtitle {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.cv-item-date {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.cv-item-description {
+    color: #555;
+    line-height: 1.6;
+}
+
+.skill-item, .language-item {
+    display: inline-block;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 4px;
+}
+
+.skill-level, .language-level {
+    font-size: 0.85rem;
+    color: #666;
+    margin-left: 8px;
+}
+
+/* Estilos de impresión */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .no-print {
+        display: none !important;
+    }
+    
+    .cv-container {
+        box-shadow: none;
+        padding: 20px;
+    }
+    
+    .card {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+/* Lista de CVs */
+.cv-card {
+    transition: transform 0.2s;
+}
+
+.cv-card:hover {
+    transform: translateY(-5px);
+}
+
+.version-badge {
+    font-size: 0.8rem;
+}
+
+/* Botones de acción */
+.btn-group-actions {
+    gap: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cv-container {
+        padding: 20px;
+    }
+    
+    .cv-name {
+        font-size: 1.5rem;
+    }
+    
+    .cv-section-title {
+        font-size: 1.1rem;
+    }
+}

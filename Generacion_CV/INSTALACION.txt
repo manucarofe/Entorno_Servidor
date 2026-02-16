@@ -1,0 +1,75 @@
+           GENERADOR DE CV - GUÍA RÁPIDA DE INSTALACIÓN         
+
+ PASOS PARA INSTALAR:
+
+  CREAR LA BASE DE DATOS
+   ---------------------------
+   • Abre phpMyAdmin o MySQL
+   • Importa el archivo: database.sql
+   • O ejecuta: mysql -u root -p < database.sql
+
+  CONFIGURAR LA CONEXIÓN
+   ---------------------------
+   • Abre el archivo: config.php
+   • Modifica estas líneas con tus datos:
+     
+     define('DB_HOST', 'localhost');      ← Tu host
+     define('DB_USER', 'root');           ← Tu usuario MySQL
+     define('DB_PASS', '');               ← Tu contraseña MySQL
+     define('DB_NAME', 'cv_generator');   ← Nombre de la BD
+
+  CREAR CARPETA UPLOADS
+   ---------------------------
+   • Crea una carpeta llamada: uploads
+   • Dale permisos de escritura (777 o 755)
+   • Esto es para guardar las fotos
+
+  SUBIR LOS ARCHIVOS
+   ---------------------------
+   • Copia todos los archivos a tu servidor web
+   • Ruta típica: /var/www/html/ o htdocs/
+   • Mantén la estructura de carpetas
+
+  ACCEDER A LA APLICACIÓN
+   ---------------------------
+   • Abre tu navegador
+   • Ve a: http://localhost/nombre-carpeta/
+   • Ya puedes crear tu primer CV
+
+
+ INICIO RÁPIDO (Para desarrollo):
+
+   Si tienes PHP instalado:
+   
+   $ cd carpeta-del-proyecto
+   $ php -S localhost:8000
+   
+   Luego abre: http://localhost:8000
+
+
+ FUNCIONALIDADES:
+
+   • Crear CVs con formulario dinámico
+   • Añadir múltiples experiencias y formaciones
+   • Subir foto profesional
+   • Sistema de versiones automático
+   • Editar y crear nuevas versiones
+   • Exportar a PDF (Ctrl+P)
+   • Diseño minimalista y profesional
+   • Responsive (móvil, tablet, PC)
+
+
+ SOLUCIÓN DE PROBLEMAS:
+
+    Error de conexión a BD
+       Revisa config.php
+       Verifica que MySQL esté corriendo
+   
+    Las fotos no se suben
+       Crea la carpeta uploads/
+       Dale permisos: chmod 777 uploads
+   
+    Formulario no funciona
+       Verifica que los archivos JS se carguen
+       Abre la consola del navegador (F12)
+
